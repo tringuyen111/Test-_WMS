@@ -1,0 +1,149 @@
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --sidebar-bg: #f0f0f0;
+}
+
+.dark {
+  --bg: #1a1a1a;
+  --text: #ffffff;
+  --sidebar-bg: #333333;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: var(--sidebar-bg);
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.breadcrumbs {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Goods Receipt List */
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filters input,
+.filters select {
+  padding: 0.25rem 0.5rem;
+}
+
+table.receipts {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.receipts th,
+table.receipts td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table.receipts tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.empty {
+  padding: 2rem;
+  text-align: center;
+  background: #fafafa;
+  border: 1px dashed #ccc;
+}
+
+/* Goods Receipt Create */
+.form .row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  max-width: 400px;
+}
+
+.form label {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.form input,
+.form textarea {
+  padding: 0.25rem 0.5rem;
+}
+
+.epc-input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+table.epc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.epc-table th,
+table.epc-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.tag-new {
+  background: #e0ffe0;
+  margin-left: 4px;
+  padding: 0 4px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
